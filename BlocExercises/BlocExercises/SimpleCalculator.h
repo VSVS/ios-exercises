@@ -25,6 +25,8 @@
  
  @return Returns the number higher than @c number.
  **/
+
+
 - (NSInteger) increaseNumberBy1:(NSInteger) number;
 
 /**
