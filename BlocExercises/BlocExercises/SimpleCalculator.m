@@ -8,26 +8,24 @@
 
 #import "SimpleCalculator.h"
 
+
 @implementation SimpleCalculator
 
 - (NSInteger) increaseNumberBy1:(NSInteger) number {
-    NSInteger newInteger = 0;
-    newInteger++;
-    NSLog(@"newInteger = %ld", (long)newInteger++);
-    return newInteger;
+    number++;
+    return number;
     
 }
 
 - (NSInteger) addNumber:(NSInteger) number1 toNumber:(NSInteger) number2 {
-    /* WORK HERE */
-    return number1;
+    number2 = number1 + number2;
+    return number2;
 }
 
 - (NSInteger) remainderOfNumber:(NSInteger) dividend dividedByNumber:(NSInteger) divisor {
-    /* WORK HERE */
-    return 0;
+    NSInteger remainder = dividend % divisor;
+    return remainder;
 }
-
 
 
 @end
