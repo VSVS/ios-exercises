@@ -11,8 +11,8 @@
 @implementation StringCheese
 
 - (NSString *) favoriteCheeseStringWithCheese:(NSString *)cheeseName {
-    /* WORK HERE */
-    return nil;
+    cheeseName =  @"%@";
+    return cheeseName;
 }
 
 - (NSString *) cheeseNameWithoutCheeseSuffix:(NSString *)cheeseName {
