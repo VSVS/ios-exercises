@@ -11,8 +11,12 @@
 @implementation StringCheese
 
 - (NSString *) favoriteCheeseStringWithCheese:(NSString *)cheeseName {
-    cheeseName =  @"%@";
-    return cheeseName;
+    NSString *result = [NSString stringWithFormat:@"My favorite cheese is %@.", cheeseName];
+    return result;
+
+
+    
+    
 }
 
 - (NSString *) cheeseNameWithoutCheeseSuffix:(NSString *)cheeseName {
