@@ -13,16 +13,15 @@
 - (NSString *) favoriteCheeseStringWithCheese:(NSString *)cheeseName {
     NSString *result = [NSString stringWithFormat:@"My favorite cheese is %@.", cheeseName];
     return result;
-
-
-    
-    
 }
 
 - (NSString *) cheeseNameWithoutCheeseSuffix:(NSString *)cheeseName {
-    /* WORK HERE */
-    return nil;
+    NSMutableString *fluidString = [cheeseName mutableCopy];
+    NSRange targetSuffix = [fluidString rangeOfString:@" cheese" options:NSCaseInsensitiveSearch];
+    NSString *newString = [fluidString stringByReplacingCharactersInRange:targetSuffix withString:@""];
+    return newString;
 }
+
 
 - (NSString *) numberOfCheesesStringWithCheeseCount:(NSUInteger)cheeseCount {
     if (cheeseCount == 1) {
