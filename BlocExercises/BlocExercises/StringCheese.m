@@ -33,15 +33,19 @@
 
 
 - (NSString *) numberOfCheesesStringWithCheeseCount:(NSUInteger)cheeseCount {
-    if (cheeseCount == 1) {
-        /* WORK HERE, ASSUMING THERE IS 1 CHEESE */
-        NSString *data = @"%lu cheeses";
-        return data;
+  
+    NSInteger cheeseNumber = cheeseCount;
+    NSString *oneCheese = [NSString stringWithFormat:@"%ld cheese", (long)cheeseCount];
+    NSString *moreThanOneCheese = [NSString stringWithFormat:@"%ld cheeses", (long)cheeseCount];
+    
+    if (cheeseNumber == 1) {
+        return oneCheese;
     } else {
-        /* WORK HERE, ASSUMING THERE ARE 2+ CHEESES */
-        NSString *data = @"%lu cheeses";
-        return data;
+        return moreThanOneCheese;
     }
+    
+    return nil;
+    
     
     /*
      (You will learn more about if/else statements in the next checkpoint.)
