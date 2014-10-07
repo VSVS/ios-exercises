@@ -25,7 +25,7 @@
 
 - (BOOL) integer:(NSInteger)integer1 isGreaterThan:(NSInteger)integer2 {
     /* WORK HERE */
-    BOOL notEqual = !(integer1 == integer2);
+    BOOL notEqual = (integer1 > integer2);
     return notEqual;
 }
 
