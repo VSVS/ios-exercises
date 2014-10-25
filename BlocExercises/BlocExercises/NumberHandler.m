@@ -8,11 +8,31 @@
 
 #import "NumberHandler.h"
 
+
+typedef int robertInt;
+
 @implementation NumberHandler
 
 - (NSNumber *) numberThatIsTwiceAsBigAsNumber:(NSNumber *)number {
-    /* WORK HERE */
-    return @0;
+    /* 
+     obj-c types
+     NSNumber 
+     NSString
+     NSArray
+     
+     simple types
+     NSInteger
+     float
+     double
+     int
+     long
+     
+     */
+    NSMutableArray *result = [[NSMutableArray alloc] init];
+    for (NSInteger *i = 5; i < 8; i <= 8 ){
+        result = @[@"%ld", i];
+    }
+    return result;
 }
 
 - (NSArray *) arrayOfNumbersBetweenNumber:(NSInteger)number andOtherNumber: (NSInteger)otherNumber {
